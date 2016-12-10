@@ -1,8 +1,8 @@
 # My-Sorts
-My attempt to create a numeric sort algorithm in JavaScript 
+My attempt to create a numeric sort algorithm in JavaScript
 
 ## Filter-Merge Sort
-The underlying mechanism for my sort is to filter out the (incrementally) sorted data items, leaving a disordered list. The process repeats with the disordered list to extract sorted and unsorted lists. The two sorted lists are merged to form a single sorted output. This process continues using a recursive call until all the unsorted data is exhausted.
+The underlying mechanism for my sort is to filter out the unsorted data items, leaving an (incrementally) ordered list. The process repeats on the unsorted list to extract more sorted and unsorted lists. The two sorted lists are merged to form a single sorted output. This process continues using a recursive call until all the unsorted data is exhausted.
 
                                   _______________
         Input ====>              /               \
@@ -14,7 +14,7 @@ The underlying mechanism for my sort is to filter out the (incrementally) sorted
                          |                   |                  |
                       FILTER                \|/              -->|
                      /      \                |              /   |
-                    /        \               |             /    | 
+                    /        \               |             /    |
             Unsorted          Sorted ----> MERGE ----> Sorted ==|==> Output
                     \                                          /
                      \ (terminate when empty)                 /
@@ -22,7 +22,7 @@ The underlying mechanism for my sort is to filter out the (incrementally) sorted
 
 ---
 ###Version 1: Divide and Conquer
-The first mechanism uses a simple solution that creates two new arrays, one containing the sorted data, the other the unsorted data. In total there are five arrays: 
+The first mechanism uses a simple solution that creates two new arrays, one containing the sorted data, the other the unsorted data. In total there are five arrays:
 
 + Unsorted input
 + Sorted input (initially empty)
