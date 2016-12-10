@@ -47,3 +47,4 @@ The final approach eliminates the need for any 'store' arrays by keeping both so
 Two indexes are kept, the first to the location of the highest sorted value in the array (front), the other to the last evaluated unsorted value (rear). We start by comparing values from the front to ensure they are in incremental order. When the comparison fails, values from the rear are compared to the current front index until either, a higher value is found and swapped or there are no unsorted values left to compare.
 
 ---
+This project came about following my project implementing [12 documented Sort Alogrithms](https://github.com/TracyGJG/All_Sorts) in JS.
