@@ -2,7 +2,7 @@
 My attempt to create a numeric sort algorithm in JavaScript
 
 ## Filter-Merge Sort
-The underlying mechanism for my sort is to filter out the unsorted data items, leaving an (incrementally) ordered list. The process repeats on the unsorted list to extract more sorted and unsorted lists. The two sorted lists are merged to form a single sorted output. This process continues using a recursive call until all the unsorted data is exhausted. Using recursion is useful because it makes reasoning of the algorithms easy but it is wasteful in terms of memory being passed from one call to the next. It would not be difficult to re-work the algorithms to use additional loops in place of the recursive calls. 
+The underlying mechanism for my sort is to filter out the unsorted data items, leaving an (incrementally) ordered list. The process repeats on the unsorted list to extract more sorted and unsorted lists. The two sorted lists are merged to form a single sorted output. This process continues using a recursive call until all the unsorted data is exhausted. Using recursion is useful because it makes reasoning of the algorithms easy but it is wasteful in terms of memory being passed from one call to the next. It would not be difficult to re-work the algorithms to use additional loops in place of the recursive calls, however many sort algorithms employ this technique. 
 
                                   _______________
         Input ====>              /               \
