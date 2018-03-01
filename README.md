@@ -17,8 +17,8 @@ The underlying mechanism for my sort is to filter out the unsorted data items, l
                     /        \               |             /    |
             Unsorted          Sorted ----> MERGE ----> Sorted ==|==> Output
                     \                                          /
-                     \ (terminate when empty)                 /
-                      \______________________________________/
+                     \________________________________________/
+                       (terminate when empty)
 
 It is also important to note this method uses several blocks of memory (array) but their use is very simple; no shuffling or repeated swapping of values. As we move from version 1 to 3, the primary driver is to reduce the dependence on additional memory but that used for the merge operation is unavoidable.
 
@@ -53,4 +53,4 @@ Two indexes are kept, the first to the location of the highest sorted value in t
 
 ---
 
-This project came about following my project implementing [12 documented Sort Alogrithms](https://github.com/TracyGJG/All_Sorts/blob/master/README.md) in JS.
+This project came about following my project implementing [15 documented Sort Alogrithms](https://github.com/TracyGJG/All_Sorts/blob/master/README.md) in JS.
