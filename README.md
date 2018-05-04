@@ -9,7 +9,7 @@ The underlying mechanism for my sort is to filter out the unsorted data items, l
                    \            /     (initially) |___________
           (prepare) \          /        (empty)  /            \
                      \        /                 /              \
-                      Unsorted,           Sorted                |
+                      Unsorted            Sorted                |
                          |                   |      (recursive) ^
                          |                   |                  |
                       FILTER                \|/              -->|
